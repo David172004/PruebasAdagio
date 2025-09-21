@@ -582,19 +582,21 @@
       <div class="component-item">
         <h3 class="component-title">Header Completo</h3>
         <div class="component-demo">
-          <header class="header" style="position: relative; background: rgba(15,15,16,.75); backdrop-filter: saturate(140%) blur(8px); border: 1px solid var(--outline); border-radius: 12px;">
-            <div class="container nav" style="height: 70px;">
-              <a class="brand" href="#" style="display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--text);">
-                <img class="brand-logo" src="logo.png" alt="Logo Adagio" style="width: 38px; height: 38px; object-fit: cover; border-radius: 8px; border: 1px solid var(--outline);">
+          <!-- Fixed the demo header to not interfere with mobile layout -->
+          <div class="demo-header" style="position: relative; background: rgba(15,15,16,.75); border: 1px solid var(--outline); border-radius: 12px; overflow: hidden;">
+            <div style="display: flex; align-items: center; justify-content: space-between; height: 70px; padding: 0 20px;">
+              <a href="#" style="display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--text);">
+                <div style="width: 38px; height: 38px; background: var(--primary); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-weight: bold; color: #1a1a1a;">A</div>
+                <span>Adagio</span>
               </a>
-              <nav class="nav-links" style="display: flex; align-items: center; gap: 16px;">
-                <a class="nav-link" href="#" style="color: var(--text); text-decoration: none; font-weight: 600;">Servicios</a>
-                <a class="nav-link" href="#" style="color: var(--text); text-decoration: none; font-weight: 600;">Galería</a>
-                <a class="nav-link" href="#" style="color: var(--text); text-decoration: none; font-weight: 600;">Sobre nosotros</a>
+              <div style="display: flex; align-items: center; gap: 16px;">
+                <a href="#" style="color: var(--text); text-decoration: none; font-weight: 600;">Servicios</a>
+                <a href="#" style="color: var(--text); text-decoration: none; font-weight: 600;">Galería</a>
+                <a href="#" style="color: var(--text); text-decoration: none; font-weight: 600;">Sobre nosotros</a>
                 <a class="btn btn-primary btn-small ripple" href="#">Contacto</a>
-              </nav>
+              </div>
             </div>
-          </header>
+          </div>
         </div>
         <div class="code-label">HTML</div>
         <div class="code-block">
@@ -692,6 +694,6 @@
     </section>
   </div>
 
-  <script src="scripts.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
