@@ -248,6 +248,26 @@ body {
   .nav-link:last-child {
     border-bottom: none;
   }
+
+  /* Making demo header responsive */
+  .demo-header > div {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .demo-header > div > div:last-child {
+    display: none;
+  }
+
+  .demo-header::after {
+    content: "En móviles se muestra el menú hamburger";
+    display: block;
+    padding: 10px 20px;
+    background: var(--outline);
+    color: var(--muted);
+    font-size: 0.9rem;
+    text-align: center;
+  }
 }
 
 /* Typography Classes */
@@ -419,4 +439,41 @@ body {
 .ripple:active::before {
   width: 300px;
   height: 300px;
+}
+
+/* Adding better mobile responsiveness for forms and small screens */
+@media (max-width: 480px) {
+  .style-guide {
+    padding: 20px 10px;
+  }
+
+  .guide-section {
+    padding: 16px;
+  }
+
+  .form-demo {
+    grid-template-columns: 1fr;
+  }
+
+  .form input,
+  .form select,
+  .form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    min-width: 0;
+  }
+
+  .states-demo {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .states-demo .btn {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .color-palette {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
 }
