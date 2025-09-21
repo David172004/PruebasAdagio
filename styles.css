@@ -249,7 +249,7 @@ body {
     border-bottom: none;
   }
 
-  /* Making demo header responsive */
+  /* Fixed demo header responsive styles to not interfere with main navbar */
   .demo-header > div {
     flex-direction: column;
     align-items: center;
