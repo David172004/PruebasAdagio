@@ -162,6 +162,7 @@ li.item_color {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 16px;
+  align-items: start; 
 }
 
 /* Renaming .nav-link to .enlaces_navegacion */
@@ -492,4 +493,8 @@ container.nav {
 .formulario .acciones {
   display: flex;
   gap: 12px;
+  align-self: start; 
+  align-items: center;
 }
+
+.formulario .acciones .boton { align-self: center; }
