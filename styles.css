@@ -1,3 +1,4 @@
+/* Reemplazando todo el CSS con el sistema completo final */
 :root {
   --bg: #0f0f10;
   --surface: #151517;
@@ -22,14 +23,15 @@ body {
   line-height: 1.6;
 }
 
-/* Estilos específicos para la guía */
-.style-guide {
+/* Renaming main.style-guide to main.guia_estilos */
+main.guia_estilos {
   max-width: 1400px;
   margin: 0 auto;
   padding: 40px 20px;
 }
 
-.guide-section {
+/* Renaming .guide-section to .seccion_guia */
+.seccion_guia {
   margin-bottom: 60px;
   background: var(--surface);
   border: 1px solid var(--outline);
@@ -37,7 +39,8 @@ body {
   padding: 24px;
 }
 
-.guide-title {
+/* Renaming .guide-title to .titulo_guia */
+.titulo_guia {
   font-family: "Playfair Display", serif;
   font-size: 2.5rem;
   color: var(--primary);
@@ -45,7 +48,8 @@ body {
   text-align: center;
 }
 
-.section-title {
+/* Renaming .section-title to .titulo_seccion */
+.titulo_seccion {
   font-family: "Playfair Display", serif;
   font-size: 1.8rem;
   color: var(--primary);
@@ -54,7 +58,13 @@ body {
   padding-bottom: 8px;
 }
 
-.component-item {
+/* Añadiendo soporte para container elements manteniendo la lógica solicitada */
+container {
+  display: block;
+}
+
+/* Renaming .component-item to .componente */
+.componente {
   margin-bottom: 32px;
   padding: 20px;
   background: var(--bg);
@@ -62,7 +72,8 @@ body {
   border-radius: 12px;
 }
 
-.component-title {
+/* Renaming .component-title to .titulo_componente */
+.titulo_componente {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   color: var(--text);
@@ -70,7 +81,8 @@ body {
   font-size: 1.2rem;
 }
 
-.component-demo {
+/* Renaming article.component-demo to article.demo_componente */
+article.demo_componente {
   margin-bottom: 16px;
   padding: 20px;
   background: var(--surface);
@@ -78,7 +90,8 @@ body {
   border-radius: 8px;
 }
 
-.code-block {
+/* Renaming .code-block to .contenedor_codigo */
+.contenedor_codigo {
   background: #0a0a0b;
   border: 1px solid var(--outline);
   border-radius: 8px;
@@ -87,7 +100,7 @@ body {
   overflow-x: auto;
 }
 
-.code-block pre {
+.contenedor_codigo pre {
   margin: 0;
   color: #e6e6e6;
   font-family: "Courier New", monospace;
@@ -95,7 +108,8 @@ body {
   line-height: 1.4;
 }
 
-.code-label {
+/* Renaming .code-label to .etiqueta_codigo */
+.etiqueta_codigo {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   color: var(--primary);
@@ -103,20 +117,26 @@ body {
   margin-bottom: 4px;
 }
 
-.color-palette {
+/* Renaming ul.color-palette to ul.paleta_colores */
+ul.paleta_colores {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 16px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.color-item {
+/* Renaming li.color-item to li.item_color */
+li.item_color {
   text-align: center;
   padding: 16px;
   border-radius: 12px;
   border: 1px solid var(--outline);
 }
 
-.color-swatch {
+/* Renaming .color-swatch to .muestra_color */
+.muestra_color {
   width: 80px;
   height: 80px;
   border-radius: 12px;
@@ -124,45 +144,50 @@ body {
   border: 2px solid var(--outline);
 }
 
-.typography-demo {
+/* Renaming .typography-demo to .demo_tipografia */
+.demo_tipografia {
   margin-bottom: 20px;
 }
 
-.states-demo {
+/* Renaming .states-demo to .demo_estados */
+.demo_estados {
   display: flex;
   gap: 12px;
   flex-wrap: wrap;
   align-items: center;
 }
 
-.form-demo {
+/* Renaming .form-demo to .demo_formulario */
+.demo_formulario {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 16px;
 }
 
-.nav-link {
+/* Renaming .nav-link to .enlaces_navegacion */
+.enlaces_navegacion {
   color: var(--text);
   text-decoration: none;
   font-weight: 600;
   transition: .2s color, .2s transform;
 }
 
-.nav-link:hover {
+.enlaces_navegacion:hover {
   color: #fff;
   transform: translateY(-1px);
 }
 
-.nav-link:active,
-.nav-link.active {
+.enlaces_navegacion:active,
+.enlaces_navegacion.active {
   color: var(--primary);
 }
 
-.nav-link:visited {
+.enlaces_navegacion:visited {
   color: var(--muted);
 }
 
-.header {
+/* Renaming .header to .encabezado */
+.encabezado {
   position: fixed;
   top: 0;
   left: 0;
@@ -173,7 +198,8 @@ body {
   border-bottom: 1px solid var(--outline);
 }
 
-.container.nav {
+/* Renaming container.nav to container.nav and .container to .contenedor */
+container.nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -183,7 +209,8 @@ body {
   padding: 0 20px;
 }
 
-.brand {
+/* Renaming .brand to .marca */
+.marca {
   display: flex;
   align-items: center;
   gap: 12px;
@@ -191,7 +218,8 @@ body {
   color: var(--text);
 }
 
-.brand-logo {
+/* Renaming .brand-logo to .logo */
+.logo {
   width: 38px;
   height: 38px;
   object-fit: cover;
@@ -199,90 +227,90 @@ body {
   border: 1px solid var(--outline);
 }
 
-.nav-links {
+/* Renaming .brand-text to .texto_logo */
+.texto_logo {
+  font-family: "Playfair Display", "Abril Fatface", "Cormorant Garamond", serif;
+  font-size: 1.2rem;
+}
+
+/* Renaming .nav-links to .contenedor_links */
+.contenedor_links {
   display: flex;
   align-items: center;
   gap: 16px;
 }
 
-.mobile-menu-btn {
+/* Fixed mobile menu button to only show on mobile devices and renamed .mobile-menu-btn to .boton_hamburguesa */
+.boton_hamburguesa {
   display: none;
   background: none;
   border: none;
+  color: var(--text);
+  font-size: 1.5rem;
   cursor: pointer;
   padding: 8px;
-  font-size: 20px;
-  color: var(--text);
-  font-weight: bold;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.boton_hamburguesa:hover {
+  background-color: var(--outline);
 }
 
 @media (max-width: 768px) {
-  .mobile-menu-btn {
+  .boton_hamburguesa {
     display: block;
   }
 
-  .nav-links {
+  .contenedor_links {
     display: none;
-    position: fixed;
-    top: 70px;
-    left: 0;
-    right: 0;
-    background: var(--surface);
-    border-bottom: 1px solid var(--outline);
     flex-direction: column;
-    padding: 20px;
-    gap: 20px;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 200px;
+    background: var(--surface);
+    border: 1px solid var(--outline);
+    border-radius: 8px;
+    padding: 12px;
   }
 
-  .nav-links.show {
+  .contenedor_links.show {
     display: flex;
-  }
-
-  .nav-link {
-    padding: 12px 0;
-    border-bottom: 1px solid var(--outline);
-    width: 100%;
-    text-align: center;
-  }
-
-  .nav-link:last-child {
-    border-bottom: none;
   }
 }
 
 /* Typography Classes */
-.title-display {
+/* Renaming .title-display to .titulo_principal */
+.titulo_principal {
   font-family: "Playfair Display", "Abril Fatface", "Cormorant Garamond", serif;
   font-size: clamp(24px, 3.2vw, 36px);
   line-height: 1.1;
   color: var(--text);
 }
 
-.title-section {
-  font-family: "Playfair Display", "Cormorant Garamond", serif;
-  font-size: clamp(20px, 2.4vw, 28px);
-  color: var(--text);
-}
-
-.subtitle,
-.subtitle-strong {
+/* Renaming .subtitle to .subtitulo and .subtitle-strong to .subtitulo_fuerte */
+.subtitulo,
+.subtitulo_fuerte {
   font-family: "Montserrat", "Poppins", "Raleway", sans-serif;
   color: var(--text);
 }
 
-.subtitle-strong {
+.subtitulo_fuerte {
   font-weight: 800;
   letter-spacing: .2px;
 }
 
-.accent-script {
+/* Renaming .accent-script to .texto_acento */
+.texto_acento {
   font-family: "Dancing Script", "Pacifico", "Great Vibes", cursive;
   font-size: clamp(18px, 2.6vw, 28px);
   color: var(--primary);
 }
 
 /* Button Styles */
-.btn {
+/* Renaming .btn to .boton, .btn-primary to .boton_primario, .btn-secondary to .boton_secundario, .btn-outline to .boton_outline, and removing .btn-small completely */
+.boton {
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -300,46 +328,42 @@ body {
   font-family: inherit;
 }
 
-.btn:hover {
+.boton:hover {
   transform: translateY(-2px);
 }
 
-.btn:focus-visible {
+.boton:focus-visible {
   outline: 2px solid var(--primary);
   outline-offset: 2px;
   box-shadow: 0 0 0 4px rgba(212, 175, 55, 0.2);
 }
 
-.btn:disabled {
+.boton:disabled {
   opacity: 0.5;
   cursor: not-allowed;
 }
 
-.btn-primary {
+.boton_primario {
   background: var(--primary);
   color: #1a1a1a;
   border-color: transparent;
 }
 
-.btn-primary:hover {
+.boton_primario:hover {
   background: var(--primary-700);
 }
 
-.btn-outline {
+.boton_outline {
   background: transparent;
 }
 
-.btn-secondary {
+.boton_secundario {
   background: #1e1f24;
 }
 
-.btn-small {
-  padding: 8px 14px;
-  font-size: .95rem;
-}
-
 /* Form Styles */
-.form {
+/* Renaming .form to .formulario, .check to .opcion, .actions to .acciones */
+.formulario {
   max-width: 400px;
   background: var(--surface);
   padding: 24px;
@@ -347,13 +371,13 @@ body {
   border: 1px solid var(--outline);
 }
 
-.form h3 {
+.formulario h3 {
   margin: 0 0 20px;
   color: var(--primary);
   font-family: "Playfair Display", serif;
 }
 
-.form label {
+.formulario label {
   display: grid;
   gap: 6px;
   font-weight: 700;
@@ -362,9 +386,9 @@ body {
   color: var(--text);
 }
 
-.form input,
-.form select,
-.form textarea {
+.formulario input,
+.formulario select,
+.formulario textarea {
   padding: 12px 14px;
   border-radius: 10px;
   border: 1px solid var(--outline);
@@ -373,14 +397,14 @@ body {
   font-family: inherit;
 }
 
-.form input:focus,
-.form select:focus,
-.form textarea:focus {
+.formulario input:focus,
+.formulario select:focus,
+.formulario textarea:focus {
   outline: 2px solid var(--primary);
   box-shadow: 0 0 0 4px rgba(212, 175, 55, 0.15);
 }
 
-.form .check {
+.formulario .opcion {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -388,72 +412,11 @@ body {
   margin-bottom: 20px;
 }
 
-.form .check input {
+.formulario .opcion input {
   margin-right: 8px;
 }
 
-.form .actions {
+.formulario .acciones {
   display: flex;
   gap: 12px;
-}
-
-/* Ripple Effect */
-.ripple {
-  position: relative;
-  overflow: hidden;
-}
-
-.ripple::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 0;
-  height: 0;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.3);
-  transform: translate(-50%, -50%);
-  transition: width .3s, height .3s;
-}
-
-.ripple:active::before {
-  width: 300px;
-  height: 300px;
-}
-
-/* Adding better mobile responsiveness for forms and small screens */
-@media (max-width: 480px) {
-  .style-guide {
-    padding: 20px 10px;
-  }
-
-  .guide-section {
-    padding: 16px;
-  }
-
-  .form-demo {
-    grid-template-columns: 1fr;
-  }
-
-  .form input,
-  .form select,
-  .form textarea {
-    width: 100%;
-    box-sizing: border-box;
-    min-width: 0;
-  }
-
-  .states-demo {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .states-demo .btn {
-    text-align: center;
-    justify-content: center;
-  }
-
-  .color-palette {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  }
 }
