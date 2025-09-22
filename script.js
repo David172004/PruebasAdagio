@@ -1,4 +1,5 @@
-document.addEventListener("DOMContentLoaded", () => {
+window.addEventListener("load", () => {
+
   const navLinks = document.querySelectorAll('.enlaces_navegacion[href^="#"]')
 
   navLinks.forEach((link) => {
@@ -15,11 +16,9 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     })
   })
-})
 
-document.addEventListener("DOMContentLoaded", () => {
   const sections = document.querySelectorAll(".seccion_guia")
-  const navLinks = document.querySelectorAll('.enlaces_navegacion[href^="#"]')
+  const navLinksForActive = document.querySelectorAll('.enlaces_navegacion[href^="#"]')
 
   function updateActiveLink() {
     let current = ""
@@ -33,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     })
 
-    navLinks.forEach((link) => {
+    navLinksForActive.forEach((link) => {
       link.classList.remove("active")
       if (link.getAttribute("href") === "#" + current) {
         link.classList.add("active")
@@ -43,19 +42,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
   window.addEventListener("scroll", updateActiveLink)
   updateActiveLink()
-})
 
-document.addEventListener("DOMContentLoaded", () => {
   const mobileMenuBtn = document.querySelector(".boton_hamburguesa")
   const navLinksContainer = document.querySelector(".contenedor_links")
 
   if (mobileMenuBtn && navLinksContainer) {
-    // Toggle menu
     mobileMenuBtn.addEventListener("click", () => {
       navLinksContainer.classList.toggle("show")
       mobileMenuBtn.textContent = navLinksContainer.classList.contains("show") ? "✕" : "☰"
     })
-    
+
     const navLinkItems = document.querySelectorAll(".contenedor_links .enlaces_navegacion")
     navLinkItems.forEach((link) => {
       link.addEventListener("click", () => {
