@@ -229,9 +229,11 @@ container.nav {
 
 .contenedor_links {
   display: flex;
+  justify-content: flex-end;
   align-items: center;
   gap: 16px;
-  justify-content: flex-end;
+  flex: 1;
+  margin-left: auto;
 }
 
 .boton_hamburguesa {
