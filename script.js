@@ -1,6 +1,3 @@
-// ============================
-// Smooth scrolling for nav links
-// ============================
 document.addEventListener("DOMContentLoaded", () => {
   const navLinks = document.querySelectorAll('.enlaces_navegacion[href^="#"]')
 
@@ -20,9 +17,6 @@ document.addEventListener("DOMContentLoaded", () => {
   })
 })
 
-// ============================
-// Active state on scroll
-// ============================
 document.addEventListener("DOMContentLoaded", () => {
   const sections = document.querySelectorAll(".seccion_guia")
   const navLinks = document.querySelectorAll('.enlaces_navegacion[href^="#"]')
@@ -51,9 +45,6 @@ document.addEventListener("DOMContentLoaded", () => {
   updateActiveLink()
 })
 
-// ============================
-// Mobile menu (hamburger)
-// ============================
 document.addEventListener("DOMContentLoaded", () => {
   const mobileMenuBtn = document.querySelector(".boton_hamburguesa")
   const navLinksContainer = document.querySelector(".contenedor_links")
@@ -64,8 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
       navLinksContainer.classList.toggle("show")
       mobileMenuBtn.textContent = navLinksContainer.classList.contains("show") ? "✕" : "☰"
     })
-
-    // Close menu when clicking a link
+    
     const navLinkItems = document.querySelectorAll(".contenedor_links .enlaces_navegacion")
     navLinkItems.forEach((link) => {
       link.addEventListener("click", () => {
