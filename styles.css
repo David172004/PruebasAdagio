@@ -1,4 +1,3 @@
-/* Reemplazando todo el CSS con el sistema completo final */
 :root {
   --bg: #0f0f10;
   --surface: #151517;
@@ -23,14 +22,13 @@ body {
   line-height: 1.6;
 }
 
-/* Renaming main.style-guide to main.guia_estilos */
+
 main.guia_estilos {
   max-width: 1400px;
   margin: 0 auto;
   padding: 40px 20px;
 }
 
-/* Renaming .guide-section to .seccion_guia */
 .seccion_guia {
   margin-bottom: 60px;
   background: var(--surface);
@@ -39,7 +37,7 @@ main.guia_estilos {
   padding: 24px;
 }
 
-/* Renaming .guide-title to .titulo_guia */
+
 .titulo_guia {
   font-family: "Playfair Display", serif;
   font-size: 2.5rem;
@@ -48,7 +46,7 @@ main.guia_estilos {
   text-align: center;
 }
 
-/* Renaming .section-title to .titulo_seccion */
+
 .titulo_seccion {
   font-family: "Playfair Display", serif;
   font-size: 1.8rem;
@@ -58,12 +56,12 @@ main.guia_estilos {
   padding-bottom: 8px;
 }
 
-/* Añadiendo soporte para container elements manteniendo la lógica solicitada */
+
 container {
   display: block;
 }
 
-/* Renaming .component-item to .componente */
+
 .componente {
   margin-bottom: 32px;
   padding: 20px;
@@ -72,7 +70,6 @@ container {
   border-radius: 12px;
 }
 
-/* Renaming .component-title to .titulo_componente */
 .titulo_componente {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -81,7 +78,6 @@ container {
   font-size: 1.2rem;
 }
 
-/* Renaming article.component-demo to article.demo_componente */
 article.demo_componente {
   margin-bottom: 16px;
   padding: 20px;
@@ -90,7 +86,7 @@ article.demo_componente {
   border-radius: 8px;
 }
 
-/* Renaming .code-block to .contenedor_codigo */
+
 .contenedor_codigo {
   background: #0a0a0b;
   border: 1px solid var(--outline);
@@ -108,7 +104,7 @@ article.demo_componente {
   line-height: 1.4;
 }
 
-/* Renaming .code-label to .etiqueta_codigo */
+
 .etiqueta_codigo {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
@@ -117,7 +113,7 @@ article.demo_componente {
   margin-bottom: 4px;
 }
 
-/* Renaming ul.color-palette to ul.paleta_colores */
+
 ul.paleta_colores {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -127,7 +123,7 @@ ul.paleta_colores {
   margin: 0;
 }
 
-/* Renaming li.color-item to li.item_color */
+
 li.item_color {
   text-align: center;
   padding: 16px;
@@ -135,7 +131,6 @@ li.item_color {
   border: 1px solid var(--outline);
 }
 
-/* Renaming .color-swatch to .muestra_color */
 .muestra_color {
   width: 80px;
   height: 80px;
@@ -144,12 +139,11 @@ li.item_color {
   border: 2px solid var(--outline);
 }
 
-/* Renaming .typography-demo to .demo_tipografia */
+
 .demo_tipografia {
   margin-bottom: 20px;
 }
 
-/* Renaming .states-demo to .demo_estados */
 .demo_estados {
   display: flex;
   gap: 12px;
@@ -157,14 +151,13 @@ li.item_color {
   align-items: center;
 }
 
-/* Renaming .form-demo to .demo_formulario */
 .demo_formulario {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 16px;
+  align-items: start; 
 }
 
-/* Renaming .nav-link to .enlaces_navegacion */
 .enlaces_navegacion {
   color: var(--text);
   text-decoration: none;
@@ -186,7 +179,7 @@ li.item_color {
   color: var(--muted);
 }
 
-/* Renaming .header to .encabezado */
+
 .encabezado {
   position: fixed;
   top: 0;
@@ -198,7 +191,6 @@ li.item_color {
   border-bottom: 1px solid var(--outline);
 }
 
-/* Renaming container.nav to container.nav and .container to .contenedor */
 container.nav {
   display: flex;
   align-items: center;
@@ -209,7 +201,6 @@ container.nav {
   padding: 0 20px;
 }
 
-/* Renaming .brand to .marca */
 .marca {
   display: flex;
   align-items: center;
@@ -218,7 +209,6 @@ container.nav {
   color: var(--text);
 }
 
-/* Renaming .brand-logo to .logo */
 .logo {
   width: 38px;
   height: 38px;
@@ -227,20 +217,17 @@ container.nav {
   border: 1px solid var(--outline);
 }
 
-/* Renaming .brand-text to .texto_logo */
 .texto_logo {
   font-family: "Playfair Display", "Abril Fatface", "Cormorant Garamond", serif;
   font-size: 1.2rem;
 }
 
-/* Renaming .nav-links to .contenedor_links */
 .contenedor_links {
   display: flex;
   align-items: center;
   gap: 16px;
 }
 
-/* Fixed mobile menu button to only show on mobile devices and renamed .mobile-menu-btn to .boton_hamburguesa */
 .boton_hamburguesa {
   display: none;
   background: none;
@@ -280,8 +267,6 @@ container.nav {
   }
 }
 
-/* Typography Classes */
-/* Renaming .title-display to .titulo_principal */
 .titulo_principal {
   font-family: "Playfair Display", "Abril Fatface", "Cormorant Garamond", serif;
   font-size: clamp(24px, 3.2vw, 36px);
@@ -289,32 +274,28 @@ container.nav {
   color: var(--text);
 }
 
-/* Renaming .subtitle to .subtitulo and .subtitle-strong to .subtitulo_fuerte */
 .subtitulo,
-.subtitulo_fuerte {
+.subtitulo_negrita {
   font-family: "Montserrat", "Poppins", "Raleway", sans-serif;
   color: var(--text);
 }
 
-.subtitulo_fuerte {
+.subtitulo_negrita {
   font-weight: 800;
   letter-spacing: .2px;
 }
 
-/* Renaming .accent-script to .texto_acento */
 .texto_acento {
   font-family: "Dancing Script", "Pacifico", "Great Vibes", cursive;
   font-size: clamp(18px, 2.6vw, 28px);
   color: var(--primary);
 }
 
-/* Button Styles */
-/* Renaming .btn to .boton, .btn-primary to .boton_primario, .btn-secondary to .boton_secundario, .btn-outline to .boton_outline, and removing .btn-small completely */
 .boton {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 12px 18px;
+  padding: 6px 18px;
   border-radius: 999px;
   border: 1px solid var(--outline);
   text-decoration: none;
@@ -361,8 +342,6 @@ container.nav {
   background: #1e1f24;
 }
 
-/* Form Styles */
-/* Renaming .form to .formulario, .check to .opcion, .actions to .acciones */
 .formulario {
   max-width: 400px;
   background: var(--surface);
@@ -419,4 +398,9 @@ container.nav {
 .formulario .acciones {
   display: flex;
   gap: 12px;
+   align-self: start; align-items: center;
+  
+
+
 }
+.formulario .acciones .boton { align-self: center; }
