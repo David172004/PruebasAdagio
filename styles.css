@@ -159,6 +159,11 @@ li.item_color {
 }
 
 .enlaces_navegacion {
+  display: block; 
+  text-align: left; 
+  width: 100%;
+  padding: 12px 20px; 
+  margin: 0; 
   color: var(--text);
   text-decoration: none;
   font-weight: 600;
@@ -229,7 +234,7 @@ container.nav {
 }
 
 .boton_hamburguesa {
-  display: none;
+  display: block;
   background: none;
   border: none;
   color: var(--text);
@@ -249,18 +254,18 @@ container.nav {
     display: block;
   }
 
-  .contenedor_links {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 70px;
-    right: 0;
-    width: 200px;
-    background: var(--surface);
-    border: 1px solid var(--outline);
-    border-radius: 8px;
-    padding: 12px;
-  }
+ .contenedor_links {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 70px;
+  right: 0;
+  width: 200px;
+  background: var(--surface);
+  border: 1px solid var(--outline);
+  border-radius: 8px;
+  padding: 12px;
+}
 
   .contenedor_links.show {
     display: flex;
