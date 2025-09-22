@@ -1,32 +1,8 @@
-// Ripple effect for buttons
+// ============================
+// Smooth scrolling for nav links
+// ============================
 document.addEventListener("DOMContentLoaded", () => {
-  const rippleButtons = document.querySelectorAll(".ripple")
-
-  rippleButtons.forEach((button) => {
-    button.addEventListener("click", function (e) {
-      const ripple = document.createElement("span")
-      const rect = this.getBoundingClientRect()
-      const size = Math.max(rect.width, rect.height)
-      const x = e.clientX - rect.left - size / 2
-      const y = e.clientY - rect.top - size / 2
-
-      ripple.style.width = ripple.style.height = size + "px"
-      ripple.style.left = x + "px"
-      ripple.style.top = y + "px"
-      ripple.classList.add("ripple-effect")
-
-      this.appendChild(ripple)
-
-      setTimeout(() => {
-        ripple.remove()
-      }, 600)
-    })
-  })
-})
-
-// Smooth scrolling for navigation links
-document.addEventListener("DOMContentLoaded", () => {
-  const navLinks = document.querySelectorAll('.nav-link[href^="#"]')
+  const navLinks = document.querySelectorAll('.enlaces_navegacion[href^="#"]')
 
   navLinks.forEach((link) => {
     link.addEventListener("click", function (e) {
@@ -44,10 +20,12 @@ document.addEventListener("DOMContentLoaded", () => {
   })
 })
 
-// Add active state to navigation links based on scroll position
+// ============================
+// Active state on scroll
+// ============================
 document.addEventListener("DOMContentLoaded", () => {
-  const sections = document.querySelectorAll(".guide-section")
-  const navLinks = document.querySelectorAll('.nav-link[href^="#"]')
+  const sections = document.querySelectorAll(".seccion_guia")
+  const navLinks = document.querySelectorAll('.enlaces_navegacion[href^="#"]')
 
   function updateActiveLink() {
     let current = ""
@@ -70,23 +48,25 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   window.addEventListener("scroll", updateActiveLink)
-  updateActiveLink() // Call once on load
+  updateActiveLink()
+})
 
-  const mobileMenuBtn = document.querySelector(".mobile-menu-btn")
-  const navLinksContainer = document.querySelector(".nav-links")
+// ============================
+// Mobile menu (hamburger)
+// ============================
+document.addEventListener("DOMContentLoaded", () => {
+  const mobileMenuBtn = document.querySelector(".boton_hamburguesa")
+  const navLinksContainer = document.querySelector(".contenedor_links")
 
   if (mobileMenuBtn && navLinksContainer) {
+    // Toggle menu
     mobileMenuBtn.addEventListener("click", () => {
-      if (navLinksContainer.classList.contains("show")) {
-        navLinksContainer.classList.remove("show")
-        mobileMenuBtn.textContent = "☰"
-      } else {
-        navLinksContainer.classList.add("show")
-        mobileMenuBtn.textContent = "✕"
-      }
+      navLinksContainer.classList.toggle("show")
+      mobileMenuBtn.textContent = navLinksContainer.classList.contains("show") ? "✕" : "☰"
     })
 
-    const navLinkItems = document.querySelectorAll(".nav-links .nav-link")
+    // Close menu when clicking a link
+    const navLinkItems = document.querySelectorAll(".contenedor_links .enlaces_navegacion")
     navLinkItems.forEach((link) => {
       link.addEventListener("click", () => {
         navLinksContainer.classList.remove("show")
