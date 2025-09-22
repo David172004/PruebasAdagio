@@ -21,83 +21,81 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Agregando header con navegación igual a Adagio 3.0 -->
-  <header class="header">
-    <div class="container nav">
-      <a class="brand" href="#">
-        <img class="brand-logo" src="Compañia Adagio 3.0/img/Logo/Round_Adagio .png" alt="Logo Adagio">
-        <span class="brand-text">Guía de Estilos</span>
+  <!-- Renaming classes from English to Spanish according to the provided mapping -->
+  <header class="encabezado">
+    <container class="contenedor nav">
+      <a class="marca" href="#">
+        <img class="logo" src="Compañia Adagio 3.0/img/Logo/Round_Adagio .png" alt="Logo Adagio">
+        <span class="texto_logo">Guía de Estilos</span>
       </a>
-      <!-- Simplified mobile menu button -->
-      <button class="mobile-menu-btn">
+      <!-- Fixed mobile menu button to only show on mobile devices -->
+      <button class="boton_hamburguesa">
         ☰
       </button>
-      <nav class="nav-links">
-        <!-- Updated navigation to match required components only -->
-        <a class="nav-link" href="#colores">Paleta de Colores</a>
-        <a class="nav-link" href="#tipografia">Sistema Tipográfico</a>
-        <a class="nav-link" href="#botones">Botones</a>
-        <a class="nav-link" href="#formularios">Formularios</a>
-        <a class="nav-link" href="#radio-checkboxes">Radio Buttons y Checkboxes</a>
-        <a class="nav-link" href="#enlaces">Enlaces</a>
-        <a class="nav-link" href="#navegacion">Navegación</a>
+      <nav class="contenedor_links">
+        <a class="enlaces_navegacion" href="#colores">Paleta de Colores</a>
+        <a class="enlaces_navegacion" href="#tipografia">Sistema Tipográfico</a>
+        <a class="enlaces_navegacion" href="#botones">Botones</a>
+        <a class="enlaces_navegacion" href="#formularios">Formularios</a>
+        <a class="enlaces_navegacion" href="#radio-checkboxes">Radio Buttons y Checkboxes</a>
+        <a class="enlaces_navegacion" href="#enlaces">Enlaces</a>
+        <a class="enlaces_navegacion" href="#navegacion">Navegación</a>
       </nav>
-    </div>
+    </container>
   </header>
 
-  <div class="style-guide">
-    <!-- Adding top margin to prevent overlap with fixed header -->
+  <main class="guia_estilos">
     <header style="margin-top: 90px;">
-      <h1 class="guide-title">Guía de Estilos - Compañía Adagio</h1>
+      <h1 class="titulo_guia">Guía de Estilos - Compañía Adagio</h1>
       <p style="text-align: center; color: var(--muted); font-size: 1.1rem; margin-bottom: 40px;">
         Sistema de diseño completo para componentes web básicos
       </p>
     </header>
 
     <!-- Paleta de Colores -->
-    <section id="colores" class="guide-section">
-      <h2 class="section-title">Paleta de Colores</h2>
-      <div class="color-palette">
-        <div class="color-item">
-          <div class="color-swatch" style="background: #D4AF37;"></div>
+    <section id="colores" class="seccion_guia">
+      <h2 class="titulo_seccion">Paleta de Colores</h2>
+      <ul class="paleta_colores">
+        <li class="item_color">
+          <div class="muestra_color" style="background: #D4AF37;"></div>
           <h4 style="margin: 0 0 4px; color: var(--text);">Primary</h4>
           <p style="margin: 0; color: var(--muted); font-size: 0.9rem;">#D4AF37</p>
           <p style="margin: 4px 0 0; color: var(--muted); font-size: 0.8rem;">var(--primary)</p>
-        </div>
-        <div class="color-item">
-          <div class="color-swatch" style="background: #0f0f10;"></div>
+        </li>
+        <li class="item_color">
+          <div class="muestra_color" style="background: #0f0f10;"></div>
           <h4 style="margin: 0 0 4px; color: var(--text);">Background</h4>
           <p style="margin: 0; color: var(--muted); font-size: 0.9rem;">#0f0f10</p>
           <p style="margin: 4px 0 0; color: var(--muted); font-size: 0.8rem;">var(--bg)</p>
-        </div>
-        <div class="color-item">
-          <div class="color-swatch" style="background: #151517;"></div>
+        </li>
+        <li class="item_color">
+          <div class="muestra_color" style="background: #151517;"></div>
           <h4 style="margin: 0 0 4px; color: var(--text);">Surface</h4>
           <p style="margin: 0; color: var(--muted); font-size: 0.9rem;">#151517</p>
           <p style="margin: 4px 0 0; color: var(--muted); font-size: 0.8rem;">var(--surface)</p>
-        </div>
-        <div class="color-item">
-          <div class="color-swatch" style="background: #f6f6f8;"></div>
+        </li>
+        <li class="item_color">
+          <div class="muestra_color" style="background: #f6f6f8;"></div>
           <h4 style="margin: 0 0 4px; color: var(--text);">Text</h4>
           <p style="margin: 0; color: var(--muted); font-size: 0.9rem;">#f6f6f8</p>
           <p style="margin: 4px 0 0; color: var(--muted); font-size: 0.8rem;">var(--text)</p>
-        </div>
-        <div class="color-item">
-          <div class="color-swatch" style="background: #9a9aa3;"></div>
+        </li>
+        <li class="item_color">
+          <div class="muestra_color" style="background: #9a9aa3;"></div>
           <h4 style="margin: 0 0 4px; color: var(--text);">Muted</h4>
           <p style="margin: 0; color: var(--muted); font-size: 0.9rem;">#9a9aa3</p>
           <p style="margin: 4px 0 0; color: var(--muted); font-size: 0.8rem;">var(--muted)</p>
-        </div>
-        <div class="color-item">
-          <div class="color-swatch" style="background: #242428;"></div>
+        </li>
+        <li class="item_color">
+          <div class="muestra_color" style="background: #242428;"></div>
           <h4 style="margin: 0 0 4px; color: var(--text);">Outline</h4>
           <p style="margin: 0; color: var(--muted); font-size: 0.9rem;">#242428</p>
           <p style="margin: 4px 0 0; color: var(--muted); font-size: 0.8rem;">var(--outline)</p>
-        </div>
-      </div>
+        </li>
+      </ul>
       
-      <div class="code-block">
-        <div class="code-label">CSS Variables</div>
+      <container class="contenedor_codigo">
+        <div class="etiqueta_codigo">CSS Variables</div>
         <pre>:root {
   --bg: #0f0f10;
   --surface: #151517;
@@ -108,117 +106,116 @@
   --outline: #242428;
   --shadow: rgba(0,0,0,.35);
 }</pre>
-      </div>
+      </container>
     </section>
 
     <!-- Sistema Tipográfico -->
-    <section id="tipografia" class="guide-section">
-      <h2 class="section-title">Sistema Tipográfico</h2>
+    <section id="tipografia" class="seccion_guia">
+      <h2 class="titulo_seccion">Sistema Tipográfico</h2>
       
-      <div class="component-item">
-        <h3 class="component-title">Títulos Principales</h3>
-        <div class="component-demo">
-          <div class="typography-demo">
-            <h1 class="title-display" style="margin: 0;">Título Display</h1>
-          </div>
-          <div class="typography-demo">
-            <h2 class="title-section" style="margin: 0;">Título de Sección</h2>
-          </div>
-        </div>
-        <div class="code-label">HTML</div>
-        <div class="code-block">
-          <pre>&lt;h1 class="title-display"&gt;Título Display&lt;/h1&gt;
-&lt;h2 class="title-section"&gt;Título de Sección&lt;/h2&gt;</pre>
-        </div>
-        <div class="code-label">CSS</div>
-        <div class="code-block">
-          <pre>.title-display {
+      <container class="componente">
+        <h3 class="titulo_componente">Títulos Principales</h3>
+        <article class="demo_componente">
+          <container class="demo_tipografia">
+            <h1 class="titulo_principal" style="margin: 0;">Título Display</h1>
+          </container>
+          <container class="demo_tipografia">
+            <h2 class="titulo_seccion" style="margin: 0;">Título de Sección</h2>
+          </container>
+        </article>
+        <div class="etiqueta_codigo">HTML</div>
+        <container class="contenedor_codigo">
+          <pre>&lt;h1 class="titulo_principal"&gt;Título Display&lt;/h1&gt;
+&lt;h2 class="titulo_seccion"&gt;Título de Sección&lt;/h2&gt;</pre>
+        </container>
+        <div class="etiqueta_codigo">CSS</div>
+        <container class="contenedor_codigo">
+          <pre>.titulo_principal {
   font-family: "Playfair Display", "Abril Fatface", "Cormorant Garamond", serif;
   font-size: clamp(34px, 5.6vw, 72px);
   line-height: 1.1;
 }
 
-.title-section {
+.titulo_seccion {
   font-family: "Playfair Display", "Cormorant Garamond", serif;
   font-size: clamp(28px, 3.2vw, 42px);
 }</pre>
-        </div>
-      </div>
+        </container>
+      </container>
 
-      <div class="component-item">
-        <h3 class="component-title">Subtítulos</h3>
-        <div class="component-demo">
-          <div class="typography-demo">
-            <p class="subtitle" style="margin: 0;">Subtítulo regular</p>
-          </div>
-          <div class="typography-demo">
-            <p class="subtitle-strong" style="margin: 0;">Subtítulo fuerte</p>
-          </div>
-        </div>
-        <div class="code-label">HTML</div>
-        <div class="code-block">
-          <pre>&lt;p class="subtitle"&gt;Subtítulo regular&lt;/p&gt;
-&lt;p class="subtitle-strong"&gt;Subtítulo fuerte&lt;/p&gt;</pre>
-        </div>
-        <div class="code-label">CSS</div>
-        <div class="code-block">
-          <pre>.subtitle, .subtitle-strong {
+      <container class="componente">
+        <h3 class="titulo_componente">Subtítulos</h3>
+        <article class="demo_componente">
+          <container class="demo_tipografia">
+            <p class="subtitulo" style="margin: 0;">Subtítulo regular</p>
+          </container>
+          <container class="demo_tipografia">
+            <p class="subtitulo_fuerte" style="margin: 0;">Subtítulo fuerte</p>
+          </container>
+        </article>
+        <div class="etiqueta_codigo">HTML</div>
+        <container class="contenedor_codigo">
+          <pre>&lt;p class="subtitulo"&gt;Subtítulo regular&lt;/p&gt;
+&lt;p class="subtitulo_fuerte"&gt;Subtítulo fuerte&lt;/p&gt;</pre>
+        </container>
+        <div class="etiqueta_codigo">CSS</div>
+        <container class="contenedor_codigo">
+          <pre>.subtitulo, .subtitulo_fuerte {
   font-family: "Montserrat", "Poppins", "Raleway", sans-serif;
 }
 
-.subtitle-strong {
+.subtitulo_fuerte {
   font-weight: 800;
   letter-spacing: .2px;
 }</pre>
-        </div>
-      </div>
+        </container>
+      </container>
 
-      <div class="component-item">
-        <h3 class="component-title">Texto de Acento</h3>
-        <div class="component-demo">
-          <p class="accent-script" style="margin: 0;">Cultura • Salud • Valores</p>
-        </div>
-        <div class="code-label">HTML</div>
-        <div class="code-block">
-          <pre>&lt;p class="accent-script"&gt;Cultura • Salud • Valores&lt;/p&gt;</pre>
-        </div>
-        <div class="code-label">CSS</div>
-        <div class="code-block">
-          <pre>.accent-script {
+      <container class="componente">
+        <h3 class="titulo_componente">Texto de Acento</h3>
+        <article class="demo_componente">
+          <p class="texto_acento" style="margin: 0;">Cultura • Salud • Valores</p>
+        </article>
+        <div class="etiqueta_codigo">HTML</div>
+        <container class="contenedor_codigo">
+          <pre>&lt;p class="texto_acento"&gt;Cultura • Salud • Valores&lt;/p&gt;</pre>
+        </container>
+        <div class="etiqueta_codigo">CSS</div>
+        <container class="contenedor_codigo">
+          <pre>.texto_acento {
   font-family: "Dancing Script", "Pacifico", "Great Vibes", cursive;
   font-size: clamp(18px, 2.6vw, 28px);
   color: var(--primary);
 }</pre>
-        </div>
-      </div>
+        </container>
+      </container>
     </section>
 
     <!-- Botones -->
-    <section id="botones" class="guide-section">
-      <h2 class="section-title">Botones</h2>
+    <section id="botones" class="seccion_guia">
+      <h2 class="titulo_seccion">Botones</h2>
       
-      <div class="component-item">
-        <h3 class="component-title">Variantes de Botones</h3>
-        <div class="component-demo">
-          <div class="states-demo">
-            <button class="btn btn-primary ripple">Primario</button>
-            <button class="btn btn-secondary ripple">Secundario</button>
-            <button class="btn btn-outline ripple">Outline</button>
-            <button class="btn btn-primary btn-small ripple">Pequeño</button>
-            <button class="btn btn-primary ripple" disabled>Deshabilitado</button>
-          </div>
-        </div>
-        <div class="code-label">HTML</div>
-        <div class="code-block">
-          <pre>&lt;button class="btn btn-primary ripple"&gt;Primario&lt;/button&gt;
-&lt;button class="btn btn-secondary ripple"&gt;Secundario&lt;/button&gt;
-&lt;button class="btn btn-outline ripple"&gt;Outline&lt;/button&gt;
-&lt;button class="btn btn-primary btn-small ripple"&gt;Pequeño&lt;/button&gt;
-&lt;button class="btn btn-primary ripple" disabled&gt;Deshabilitado&lt;/button&gt;</pre>
-        </div>
-        <div class="code-label">CSS</div>
-        <div class="code-block">
-          <pre>.btn {
+      <container class="componente">
+        <h3 class="titulo_componente">Variantes de Botones</h3>
+        <article class="demo_componente">
+          <container class="demo_estados">
+            <!-- Removed btn-small class and all references to small buttons -->
+            <button class="boton boton_primario">Primario</button>
+            <button class="boton boton_secundario">Secundario</button>
+            <button class="boton boton_outline">Outline</button>
+            <button class="boton boton_primario" disabled>Deshabilitado</button>
+          </container>
+        </article>
+        <div class="etiqueta_codigo">HTML</div>
+        <container class="contenedor_codigo">
+          <pre>&lt;button class="boton boton_primario"&gt;Primario&lt;/button&gt;
+&lt;button class="boton boton_secundario"&gt;Secundario&lt;/button&gt;
+&lt;button class="boton boton_outline"&gt;Outline&lt;/button&gt;
+&lt;button class="boton boton_primario" disabled&gt;Deshabilitado&lt;/button&gt;</pre>
+        </container>
+        <div class="etiqueta_codigo">CSS</div>
+        <container class="contenedor_codigo">
+          <pre>.boton {
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -234,55 +231,50 @@
   overflow: hidden;
 }
 
-.btn:hover {
+.boton:hover {
   transform: translateY(-2px);
 }
 
-.btn:focus-visible {
+.boton:focus-visible {
   outline: 2px solid var(--primary);
   outline-offset: 2px;
   box-shadow: 0 0 0 4px rgba(212,175,55,.2);
 }
 
-.btn:disabled {
+.boton:disabled {
   opacity: .5;
   cursor: not-allowed;
 }
 
-.btn-primary {
+.boton_primario {
   background: var(--primary);
   color: #1a1a1a;
   border-color: transparent;
 }
 
-.btn-primary:hover {
+.boton_primario:hover {
   background: var(--primary-700);
 }
 
-.btn-outline {
+.boton_outline {
   background: transparent;
 }
 
-.btn-secondary {
+.boton_secundario {
   background: #1e1f24;
-}
-
-.btn-small {
-  padding: 8px 14px;
-  font-size: .95rem;
 }</pre>
-        </div>
-      </div>
+        </container>
+      </container>
     </section>
 
     <!-- Formularios -->
-    <section id="formularios" class="guide-section">
-      <h2 class="section-title">Formularios</h2>
+    <section id="formularios" class="seccion_guia">
+      <h2 class="titulo_seccion">Formularios</h2>
       
-      <div class="component-item">
-        <h3 class="component-title">Inputs Básicos</h3>
-        <div class="component-demo">
-          <div class="form-demo">
+      <container class="componente">
+        <h3 class="titulo_componente">Inputs Básicos</h3>
+        <article class="demo_componente">
+          <container class="demo_formulario">
             <label style="display: grid; gap: 6px; font-weight: 700; font-family: 'Montserrat', sans-serif; margin-bottom: 16px;">
               <span>Nombre completo *</span>
               <input type="text" placeholder="Tu nombre" required style="padding: 12px 14px; border-radius: 10px; border: 1px solid var(--outline); background: #0f1013; color: var(--text);">
@@ -290,6 +282,10 @@
             <label style="display: grid; gap: 6px; font-weight: 700; font-family: 'Montserrat', sans-serif; margin-bottom: 16px;">
               <span>Email *</span>
               <input type="email" placeholder="correo@ejemplo.com" required style="padding: 12px 14px; border-radius: 10px; border: 1px solid var(--outline); background: #0f1013; color: var(--text);">
+            </label>
+            <label style="display: grid; gap: 6px; font-weight: 700; font-family: 'Montserrat', sans-serif; margin-bottom: 16px;">
+              <span>Contraseña *</span>
+              <input type="password" placeholder="••••••••" required style="padding: 12px 14px; border-radius: 10px; border: 1px solid var(--outline); background: #0f1013; color: var(--text);">
             </label>
             <label style="display: grid; gap: 6px; font-weight: 700; font-family: 'Montserrat', sans-serif; margin-bottom: 16px;">
               <span>Servicio de interés</span>
@@ -304,20 +300,19 @@
               <span>Mensaje</span>
               <textarea rows="4" placeholder="Cuéntanos sobre tu interés..." style="padding: 12px 14px; border-radius: 10px; border: 1px solid var(--outline); background: #0f1013; color: var(--text); resize: vertical;"></textarea>
             </label>
-            <label class="check" style="display: flex; align-items: center; gap: 8px; font-weight: 600; margin-bottom: 20px;">
+            <label class="opcion" style="display: flex; align-items: center; gap: 8px; font-weight: 600; margin-bottom: 20px;">
               <input type="checkbox" required>
               <span>Acepto los términos y condiciones *</span>
             </label>
-            <div style="display: flex; gap: 12px;">
-              <button type="button" class="btn btn-secondary ripple">Cancelar</button>
-              <button type="submit" class="btn btn-primary ripple">Enviar mensaje</button>
-            </div>
-          </div>
-        </div>
-        <div class="code-label">HTML</div>
-        <div class="code-block">
-          <pre>&lt;form class="form" style="max-width: 400px; background: var(--surface); padding: 24px; border-radius: 16px; border: 1px solid var(--outline);"&gt;
-  &lt;h3 style="margin: 0 0 20px; color: var(--primary); font-family: 'Playfair Display', serif;"&gt;Formulario de Contacto&lt;/h3&gt;
+            <container class="acciones" style="display: flex; gap: 12px;">
+              <button type="button" class="boton boton_secundario">Cancelar</button>
+              <button type="submit" class="boton boton_primario">Enviar mensaje</button>
+            </container>
+          </container>
+        </article>
+        <div class="etiqueta_codigo">HTML</div>
+        <container class="contenedor_codigo">
+          <pre>&lt;form class="formulario"&gt;
   &lt;label&gt;
     &lt;span&gt;Nombre completo *&lt;/span&gt;
     &lt;input type="text" placeholder="Tu nombre" required&gt;
@@ -325,6 +320,10 @@
   &lt;label&gt;
     &lt;span&gt;Email *&lt;/span&gt;
     &lt;input type="email" placeholder="correo@ejemplo.com" required&gt;
+  &lt;/label&gt;
+  &lt;label&gt;
+    &lt;span&gt;Contraseña *&lt;/span&gt;
+    &lt;input type="password" placeholder="••••••••" required&gt;
   &lt;/label&gt;
   &lt;label&gt;
     &lt;span&gt;Servicio de interés&lt;/span&gt;
@@ -339,19 +338,19 @@
     &lt;span&gt;Mensaje&lt;/span&gt;
     &lt;textarea rows="4" placeholder="Cuéntanos sobre tu interés..."&gt;&lt;/textarea&gt;
   &lt;/label&gt;
-  &lt;label class="check"&gt;
+  &lt;label class="opcion"&gt;
     &lt;input type="checkbox" required&gt;
     &lt;span&gt;Acepto los términos y condiciones *&lt;/span&gt;
   &lt;/label&gt;
-  &lt;div&gt;
-    &lt;button type="button" class="btn btn-secondary ripple"&gt;Cancelar&lt;/button&gt;
-    &lt;button type="submit" class="btn btn-primary ripple"&gt;Enviar mensaje&lt;/button&gt;
+  &lt;div class="acciones"&gt;
+    &lt;button type="button" class="boton boton_secundario"&gt;Cancelar&lt;/button&gt;
+    &lt;button type="submit" class="boton boton_primario"&gt;Enviar mensaje&lt;/button&gt;
   &lt;/div&gt;
 &lt;/form&gt;</pre>
-        </div>
-        <div class="code-label">CSS</div>
-        <div class="code-block">
-          <pre>.form {
+        </container>
+        <div class="etiqueta_codigo">CSS</div>
+        <container class="contenedor_codigo">
+          <pre>.formulario {
   max-width: 400px;
   background: var(--surface);
   padding: 24px;
@@ -359,13 +358,13 @@
   border: 1px solid var(--outline);
 }
 
-.form h3 {
+.formulario h3 {
   margin: 0 0 20px;
   color: var(--primary);
   font-family: "Playfair Display", serif;
 }
 
-.form label {
+.formulario label {
   display: grid;
   gap: 6px;
   font-weight: 700;
@@ -373,7 +372,7 @@
   margin-bottom: 16px;
 }
 
-.form input, .form select, .form textarea {
+.formulario input, .formulario select, .formulario textarea {
   padding: 12px 14px;
   border-radius: 10px;
   border: 1px solid var(--outline);
@@ -381,12 +380,12 @@
   color: var(--text);
 }
 
-.form input:focus, .form select:focus, .form textarea:focus {
+.formulario input:focus, .formulario select:focus, .formulario textarea:focus {
   outline: 2px solid var(--primary);
   box-shadow: 0 0 0 4px rgba(212,175,55,.15);
 }
 
-.form .check {
+.formulario .opcion {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -394,21 +393,21 @@
   margin-bottom: 20px;
 }
 
-.form .check input {
+.formulario .opcion input {
   margin-right: 8px;
 }
 
-.form .actions {
+.formulario .acciones {
   display: flex;
   gap: 12px;
 }</pre>
-        </div>
-      </div>
+        </container>
+      </container>
 
-      <div class="component-item">
-        <h3 class="component-title">Radio Buttons y Checkboxes</h3>
-        <div id="radio-checkboxes" class="component-demo">
-          <div class="form-demo">
+      <container class="componente">
+        <h3 class="titulo_componente">Radio Buttons y Checkboxes</h3>
+        <article id="radio-checkboxes" class="demo_componente">
+          <container class="demo_formulario">
             <label style="display: grid; gap: 6px; font-weight: 700; font-family: 'Montserrat', sans-serif; margin-bottom: 16px;">
               <span>Seleccionar opción</span>
               <select style="padding: 12px 14px; border-radius: 10px; border: 1px solid var(--outline); background: #0f1013; color: var(--text);">
@@ -417,40 +416,40 @@
                 <option>Opción 3</option>
               </select>
             </label>
-            <div style="margin-top: 16px;">
+            <container style="margin-top: 16px;">
               <p style="font-weight: 700; margin-bottom: 8px; font-family: 'Montserrat', sans-serif;">Checkboxes:</p>
-              <label class="check" style="display: flex; align-items: center; gap: 8px; font-weight: 600; margin-bottom: 8px;">
+              <label class="opcion" style="display: flex; align-items: center; gap: 8px; font-weight: 600; margin-bottom: 8px;">
                 <input type="checkbox">
                 <span>Checkbox normal</span>
               </label>
-              <label class="check" style="display: flex; align-items: center; gap: 8px; font-weight: 600; margin-bottom: 8px;">
+              <label class="opcion" style="display: flex; align-items: center; gap: 8px; font-weight: 600; margin-bottom: 8px;">
                 <input type="checkbox" checked>
                 <span>Checkbox seleccionado</span>
               </label>
-              <label class="check" style="display: flex; align-items: center; gap: 8px; font-weight: 600; margin-bottom: 16px;">
+              <label class="opcion" style="display: flex; align-items: center; gap: 8px; font-weight: 600; margin-bottom: 16px;">
                 <input type="checkbox" disabled>
                 <span>Checkbox deshabilitado</span>
               </label>
               
               <p style="font-weight: 700; margin-bottom: 8px; font-family: 'Montserrat', sans-serif;">Radio Buttons:</p>
-              <label class="check" style="display: flex; align-items: center; gap: 8px; font-weight: 600; margin-bottom: 8px;">
+              <label class="opcion" style="display: flex; align-items: center; gap: 8px; font-weight: 600; margin-bottom: 8px;">
                 <input type="radio" name="radio-demo">
                 <span>Radio opción 1</span>
               </label>
-              <label class="check" style="display: flex; align-items: center; gap: 8px; font-weight: 600; margin-bottom: 8px;">
+              <label class="opcion" style="display: flex; align-items: center; gap: 8px; font-weight: 600; margin-bottom: 8px;">
                 <input type="radio" name="radio-demo" checked>
                 <span>Radio opción 2 (seleccionado)</span>
               </label>
-              <label class="check" style="display: flex; align-items: center; gap: 8px; font-weight: 600;">
+              <label class="opcion" style="display: flex; align-items: center; gap: 8px; font-weight: 600;">
                 <input type="radio" name="radio-demo" disabled>
                 <span>Radio deshabilitado</span>
               </label>
-            </div>
-          </div>
-        </div>
-        <div class="code-label">HTML</div>
-        <div class="code-block">
-          <pre>&lt;div class="form-demo"&gt;
+            </container>
+          </container>
+        </article>
+        <div class="etiqueta_codigo">HTML</div>
+        <container class="contenedor_codigo">
+          <pre>&lt;div class="demo_formulario"&gt;
   &lt;label&gt;
     &lt;span&gt;Seleccionar opción&lt;/span&gt;
     &lt;select&gt;
@@ -461,43 +460,43 @@
   &lt;/label&gt;
   &lt;div&gt;
     &lt;p&gt;Checkboxes:&lt;/p&gt;
-    &lt;label class="check"&gt;
+    &lt;label class="opcion"&gt;
       &lt;input type="checkbox"&gt;
       &lt;span&gt;Checkbox normal&lt;/span&gt;
     &lt;/label&gt;
-    &lt;label class="check"&gt;
+    &lt;label class="opcion"&gt;
       &lt;input type="checkbox" checked&gt;
       &lt;span&gt;Checkbox seleccionado&lt;/span&gt;
     &lt;/label&gt;
-    &lt;label class="check"&gt;
+    &lt;label class="opcion"&gt;
       &lt;input type="checkbox" disabled&gt;
       &lt;span&gt;Checkbox deshabilitado&lt;/span&gt;
     &lt;/label&gt;
     &lt;p&gt;Radio Buttons:&lt;/p&gt;
-    &lt;label class="check"&gt;
+    &lt;label class="opcion"&gt;
       &lt;input type="radio" name="radio-demo"&gt;
       &lt;span&gt;Radio opción 1&lt;/span&gt;
     &lt;/label&gt;
-    &lt;label class="check"&gt;
+    &lt;label class="opcion"&gt;
       &lt;input type="radio" name="radio-demo" checked&gt;
       &lt;span&gt;Radio opción 2 (seleccionado)&lt;/span&gt;
     &lt;/label&gt;
-    &lt;label class="check"&gt;
+    &lt;label class="opcion"&gt;
       &lt;input type="radio" name="radio-demo" disabled&gt;
       &lt;span&gt;Radio deshabilitado&lt;/span&gt;
     &lt;/label&gt;
   &lt;/div&gt;
 &lt;/div&gt;</pre>
-        </div>
-        <div class="code-label">CSS</div>
-        <div class="code-block">
-          <pre>.form-demo {
+        </container>
+        <div class="etiqueta_codigo">CSS</div>
+        <container class="contenedor_codigo">
+          <pre>.demo_formulario {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 16px;
 }
 
-.form-demo label {
+.demo_formulario label {
   display: grid;
   gap: 6px;
   font-weight: 700;
@@ -505,7 +504,7 @@
   margin-bottom: 16px;
 }
 
-.form-demo select {
+.demo_formulario select {
   padding: 12px 14px;
   border-radius: 10px;
   border: 1px solid var(--outline);
@@ -513,7 +512,7 @@
   color: var(--text);
 }
 
-.form-demo .check {
+.demo_formulario .opcion {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -521,133 +520,119 @@
   margin-bottom: 8px;
 }
 
-.form-demo .check input {
+.demo_formulario .opcion input {
   margin-right: 8px;
 }</pre>
-        </div>
-      </div>
+        </container>
+      </container>
     </section>
 
     <!-- Enlaces -->
-    <section id="enlaces" class="guide-section">
-      <h2 class="section-title">Enlaces</h2>
+    <section id="enlaces" class="seccion_guia">
+      <h2 class="titulo_seccion">Enlaces</h2>
       
-      <div class="component-item">
-        <h3 class="component-title">Estados de Enlaces</h3>
-        <div class="component-demo">
-          <div class="states-demo">
-            <a href="#" class="nav-link">Normal</a>
-            <a href="#" class="nav-link hover">Hover</a>
-            <a href="#" class="nav-link active">Activo</a>
-            <a href="#" class="nav-link visited">Visitado</a>
-          </div>
-        </div>
-        <div class="code-label">HTML</div>
-        <div class="code-block">
-          <pre>&lt;a href="#" class="nav-link"&gt;Normal&lt;/a&gt;
-&lt;a href="#" class="nav-link hover"&gt;Hover&lt;/a&gt;
-&lt;a href="#" class="nav-link active"&gt;Activo&lt;/a&gt;
-&lt;a href="#" class="nav-link visited"&gt;Visitado&lt;/a&gt;</pre>
-        </div>
-        <div class="code-label">CSS</div>
-        <div class="code-block">
-          <pre>.nav-link {
+      <container class="componente">
+        <h3 class="titulo_componente">Estados de Enlaces</h3>
+        <article class="demo_componente">
+          <container class="demo_estados">
+            <a href="#" class="enlaces_navegacion">Normal</a>
+            <a href="#" class="enlaces_navegacion hover">Hover</a>
+            <a href="#" class="enlaces_navegacion active">Activo</a>
+            <a href="#" class="enlaces_navegacion visited">Visitado</a>
+          </container>
+        </article>
+        <div class="etiqueta_codigo">HTML</div>
+        <container class="contenedor_codigo">
+          <pre>&lt;a href="#" class="enlaces_navegacion"&gt;Normal&lt;/a&gt;
+&lt;a href="#" class="enlaces_navegacion hover"&gt;Hover&lt;/a&gt;
+&lt;a href="#" class="enlaces_navegacion active"&gt;Activo&lt;/a&gt;
+&lt;a href="#" class="enlaces_navegacion visited"&gt;Visitado&lt;/a&gt;</pre>
+        </container>
+        <div class="etiqueta_codigo">CSS</div>
+        <container class="contenedor_codigo">
+          <pre>.enlaces_navegacion {
   color: var(--text);
   text-decoration: none;
   font-weight: 600;
   transition: .2s color, .2s transform;
 }
 
-.nav-link:hover {
+.enlaces_navegacion:hover {
   color: #fff;
   transform: translateY(-1px);
 }
 
-.nav-link:active,
-.nav-link.active {
+.enlaces_navegacion:active,
+.enlaces_navegacion.active {
   color: var(--primary);
 }
 
-.nav-link:visited {
+.enlaces_navegacion:visited {
   color: var(--muted);
 }</pre>
-        </div>
-      </div>
+        </container>
+      </container>
     </section>
 
     <!-- Navegación -->
-    <section id="navegacion" class="guide-section">
-      <h2 class="section-title">Barra de Navegación</h2>
+    <section id="navegacion" class="seccion_guia">
+      <h2 class="titulo_seccion">Barra de Navegación</h2>
       
-      <div class="component-item">
-        <h3 class="component-title">Header Completo</h3>
-        <div class="component-demo">
-          <!-- Simplified demo header structure for better mobile compatibility -->
-          <div style="position: relative; background: rgba(15,15,16,.75); border: 1px solid var(--outline); border-radius: 12px; overflow: hidden;">
-            <div style="display: flex; align-items: center; justify-content: space-between; height: 70px; padding: 0 20px;">
-              <div style="display: flex; align-items: center; gap: 16px;">
+      <container class="componente">
+        <h3 class="titulo_componente">Header Completo</h3>
+        <article class="demo_componente">
+          <container style="position: relative; background: rgba(15,15,16,.75); border: 1px solid var(--outline); border-radius: 12px; overflow: hidden;">
+            <container style="display: flex; align-items: center; justify-content: space-between; height: 70px; padding: 0 20px;">
+              <container style="display: flex; align-items: center; gap: 16px;">
                 <a href="#" style="color: var(--text); text-decoration: none; font-weight: 600;">Servicios</a>
                 <a href="#" style="color: var(--text); text-decoration: none; font-weight: 600;">Galería</a>
                 <a href="#" style="color: var(--text); text-decoration: none; font-weight: 600;">Sobre nosotros</a>
-                <a class="btn btn-primary btn-small ripple" href="#">Contacto</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="code-label">HTML</div>
-        <div class="code-block">
-          <pre>&lt;header class="header"&gt;
-  &lt;div class="container nav"&gt;
-    &lt;a class="brand" href="#"&gt;
-      &lt;img class="brand-logo" src="logo.png" alt="Logo Adagio"&gt;
-      &lt;span class="brand-text"&gt;Guía de Estilos&lt;/span&gt;
+                <a class="boton boton_primario" href="#">Contacto</a>
+              </container>
+            </container>
+          </container>
+        </article>
+        <div class="etiqueta_codigo">HTML</div>
+        <container class="contenedor_codigo">
+          <pre>&lt;header class="encabezado" style="position: relative; background: rgba(15,15,16,.75); backdrop-filter: saturate(140%) blur(8px); border: 1px solid var(--outline); border-radius: 12px;"&gt;
+  &lt;container class="contenedor nav" style="height: 70px;"&gt;
+    &lt;a class="marca" href="#" style="display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--text);"&gt;
+      &lt;img class="logo" src="logo.png" alt="Logo Adagio" style="width: 38px; height: 38px; object-fit: cover; border-radius: 8px; border: 1px solid var(--outline);"&gt;
     &lt;/a&gt;
-    &lt;button class="mobile-menu-btn" aria-label="Abrir menú"&gt;
-      &lt;span&gt;&lt;/span&gt;
-      &lt;span&gt;&lt;/span&gt;
-      &lt;span&gt;&lt;/span&gt;
-    &lt;/button&gt;
-    &lt;nav class="nav-links"&gt;
-      &lt;a class="nav-link" href="#"&gt;Servicios&lt;/a&gt;
-      &lt;a class="nav-link" href="#"&gt;Galería&lt;/a&gt;
-      &lt;a class="nav-link" href="#"&gt;Sobre nosotros&lt;/a&gt;
-      &lt;a class="btn btn-primary btn-small ripple" href="#"&gt;Contacto&lt;/a&gt;
+    &lt;nav class="contenedor_links" style="display: flex; align-items: center; gap: 16px;"&gt;
+      &lt;a class="enlaces_navegacion" href="#" style="color: var(--text); text-decoration: none; font-weight: 600;"&gt;Servicios&lt;/a&gt;
+      &lt;a class="enlaces_navegacion" href="#" style="color: var(--text); text-decoration: none; font-weight: 600;"&gt;Galería&lt;/a&gt;
+      &lt;a class="enlaces_navegacion" href="#" style="color: var(--text); text-decoration: none; font-weight: 600;"&gt;Sobre nosotros&lt;/a&gt;
+      &lt;a class="boton boton_primario" href="#"&gt;Contacto&lt;/a&gt;
     &lt;/nav&gt;
-  &lt;/div&gt;
+  &lt;/container&gt;
 &lt;/header&gt;</pre>
-        </div>
-        <div class="code-label">CSS</div>
-        <div class="code-block">
-          <pre>.header {
+        </container>
+        <div class="etiqueta_codigo">CSS</div>
+        <container class="contenedor_codigo">
+          <pre>.encabezado {
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
-  z-index: 100;
-  background: rgba(15,15,16,.75);
-  backdrop-filter: saturate(140%) blur(8px);
-  border-bottom: 1px solid var(--outline);
+  width: 100%;
+  z-index: 1000;
 }
 
-.container.nav {
+.contenedor.nav {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  height: 70px;
-  max-width: 1200px;
-  margin: 0 auto;
+  align-items: center;
   padding: 0 20px;
+  height: 70px;
 }
 
-.brand {
+.marca {
   display: flex;
   align-items: center;
   gap: 12px;
-  text-decoration: none;
-  color: var(--text);
 }
 
-.brand-logo {
+.logo {
   width: 38px;
   height: 38px;
   object-fit: cover;
@@ -655,40 +640,41 @@
   border: 1px solid var(--outline);
 }
 
-.nav-links {
+.texto_logo {
+  font-family: "Playfair Display", "Abril Fatface", "Cormorant Garamond", serif;
+  font-size: 1.2rem;
+}
+
+.contenedor_links {
   display: flex;
   align-items: center;
   gap: 16px;
 }
 
-.mobile-menu-btn {
-  display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 32px;
-  height: 24px;
-  cursor: pointer;
+.enlaces_navegacion {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 600;
+  transition: .2s color, .2s transform;
 }
 
-.mobile-menu-btn span {
-  width: 100%;
-  height: 2px;
-  background: var(--text);
-  border-radius: 2px;
+.enlaces_navegacion:hover {
+  color: #fff;
+  transform: translateY(-1px);
 }
 
-@media (max-width: 768px) {
-  .nav-links {
-    display: none;
-  }
-  .mobile-menu-btn {
-    display: flex;
-  }
+.enlaces_navegacion:active,
+.enlaces_navegacion.active {
+  color: var(--primary);
+}
+
+.enlaces_navegacion:visited {
+  color: var(--muted);
 }</pre>
-        </div>
-      </div>
+        </container>
+      </container>
     </section>
-  </div>
+  </main>
 
   <script src="script.js"></script>
 </body>
