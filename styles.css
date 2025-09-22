@@ -234,7 +234,7 @@ container.nav {
 }
 
 .boton_hamburguesa {
-  display: block;
+  display: none;
   background: none;
   border: none;
   color: var(--text);
