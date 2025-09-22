@@ -254,7 +254,7 @@ container.nav {
 
 @media (max-width: 768px) {
   .boton_hamburguesa {
-    display: block;
+    display: block; 
   }
 
  .contenedor_links {
