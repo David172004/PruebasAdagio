@@ -1,34 +1,40 @@
 <!DOCTYPE html>
 <html lang="es">
+  
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Guía de Estilos - Adagio</title>
   <meta name="description" content="Sistema de diseño completo para Compañía">
-  
+
+  <!--Fuentes de google-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- Títulos -->
+  <!--Titulos-->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800;900&family=Abril+Fatface&family=Cormorant+Garamond:wght@600;700&display=swap" rel="stylesheet">
-  <!-- Subtítulos -->
+  <!--Subtitulos-->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@300;400;600;700;800&family=Raleway:wght@600;700&display=swap" rel="stylesheet">
-  <!-- Párrafos -->
+  <!--Parrafos-->
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
   <!-- Acentos -->
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Pacifico&family=Great+Vibes&display=swap" rel="stylesheet">
   
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css"><!--Se llama el css-->
 </head>
+  
 <body>
+  <!--Encabezado-->
   <header class="encabezado">
     <container class="contenedor nav">
       <a class="marca" href="#">
         <img class="logo" src="Round_Adagio .png" alt="Logo Adagio">
         <span class="texto_logo">Guía de Estilos</span>
       </a>
-      <button class="boton_hamburguesa">
+      <button class="boton_hamburguesa"><!--Boton de hamburguesa-->
         ☰
       </button>
+
+      <!--Menu de navegacion-->
       <nav class="contenedor_links">
         <a class="enlaces_navegacion" href="#colores">Paleta de Colores</a>
         <a class="enlaces_navegacion" href="#tipografia">Sistema Tipográfico</a>
@@ -41,6 +47,7 @@
     </container>
   </header>
 
+  <!--Inicio del main-->
   <main class="guia_estilos">
     <header style="margin-top: 90px;">
       <h1 class="titulo_guia">Guía de Estilos - Compañía Adagio</h1>
@@ -49,7 +56,7 @@
       </p>
     </header>
 
-    <!-- Paleta de Colores -->
+    <!--Paleta de Colores-->
     <section id="colores" class="seccion_guia">
       <h2 class="titulo_seccion">Paleta de Colores</h2>
       <ul class="paleta_colores">
@@ -89,8 +96,10 @@
           <p style="margin: 0; color: var(--muted); font-size: 0.9rem;">#242428</p>
           <p style="margin: 4px 0 0; color: var(--muted); font-size: 0.8rem;">var(--outline)</p>
         </li>
+        <!--Aca se pueden ingresar mas colores--> 
       </ul>
-      
+
+      <!--Bloque de codigo para las variables de colores-->
       <container class="contenedor_codigo">
         <div class="etiqueta_codigo">CSS Variables</div>
         <pre>:root {
@@ -106,7 +115,7 @@
       </container>
     </section>
 
-    <!-- Sistema Tipográfico -->
+    <!-- Sistema Tipografico -->
     <section id="tipografia" class="seccion_guia">
       <h2 class="titulo_seccion">Sistema Tipográfico</h2>
       
@@ -139,7 +148,7 @@
 }</pre>
         </container>
       </container>
-
+      <!--Mas contenido tipografico-->
       <container class="componente">
         <h3 class="titulo_componente">Subtítulos</h3>
         <article class="demo_componente">
@@ -168,6 +177,7 @@
         </container>
       </container>
 
+      <!--CComponentes de texto-->
       <container class="componente">
         <h3 class="titulo_componente">Texto de Acento</h3>
         <article class="demo_componente">
@@ -271,6 +281,8 @@
         <h3 class="titulo_componente">Inputs Básicos</h3>
         <article class="demo_componente">
           <container class="demo_formulario">
+
+            <!--campos del formulario-->
             <label style="display: grid; gap: 6px; font-weight: 700; font-family: 'Montserrat', sans-serif; margin-bottom: 16px;">
               <span>Nombre completo *</span>
               <input type="text" placeholder="Tu nombre" required style="padding: 12px 14px; border-radius: 10px; border: 1px solid var(--outline); background: #0f1013; color: var(--text);">
@@ -300,6 +312,9 @@
               <input type="checkbox" required>
               <span>Acepto los términos y condiciones *</span>
             </label>
+            <!--Aca pueden agregar mas empacios, siguiendo la logica del programa-->
+
+            <!--Los botones del formulario-->
             <container class="acciones" style="display: flex; gap: 12px;">
               <button type="button" class="boton boton_secundario">Cancelar</button>
               <button type="submit" class="boton boton_primario">Enviar mensaje</button>
@@ -531,6 +546,7 @@
         <h3 class="titulo_componente">Estados de Enlaces</h3>
         <article class="demo_componente">
           <container class="demo_estados">
+            <!--Tipo de enlaces segun su estado-->
             <a href="#" class="enlaces_navegacion">Normal</a>
             <a href="#" class="enlaces_navegacion" style="color: #fff; transform: translateY(-1px);">Hover</a>
             <a href="#" class="enlaces_navegacion" style="color: var(--primary);">Activo</a>
@@ -578,13 +594,11 @@
         <h3 class="titulo_componente">Header Completo</h3>
         <article class="demo_componente">
           <container style="display: flex; align-items: center; justify-content: space-between; height: 70px; padding: 0 20px;">
-          <!-- LADO IZQUIERDO: Logo de Adagio -->
           <container style="display: flex; align-items: center; gap: 12px;">
             <img src="Round_Adagio .png" alt="Logo Adagio" style="width: 38px; height: 38px; object-fit: cover; border-radius: 50%;">
             <span style="font-family: 'Playfair Display', serif; font-size: 1.2rem; color: var(--text);">Adagio</span>
           </container>
   
-          <!-- LADO DERECHO: Enlaces de navegación + botón Contacto -->
           <container style="display: flex; align-items: center; gap: 16px;">
             <a href="#" style="color: var(--text); text-decoration: none; font-weight: 600;">Galería</a>
             <span style="background: var(--primary); color: #1a1a1a; padding: 8px 16px; border-radius: 999px; font-weight: 700; cursor: pointer;">Contacto</span>
