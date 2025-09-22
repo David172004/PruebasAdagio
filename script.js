@@ -1,5 +1,4 @@
 window.addEventListener("load", () => {
-
   const navLinks = document.querySelectorAll('.enlaces_navegacion[href^="#"]')
 
   navLinks.forEach((link) => {
@@ -52,6 +51,7 @@ window.addEventListener("load", () => {
       mobileMenuBtn.textContent = navLinksContainer.classList.contains("show") ? "✕" : "☰"
     })
 
+    // Cerrar menú al hacer clic en un enlace
     const navLinkItems = document.querySelectorAll(".contenedor_links .enlaces_navegacion")
     navLinkItems.forEach((link) => {
       link.addEventListener("click", () => {
@@ -61,4 +61,3 @@ window.addEventListener("load", () => {
     })
   }
 })
-
